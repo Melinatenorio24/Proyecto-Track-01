@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: rgb(223, 150, 198);
+    background-color: rgb(223, 115, 185);
 }
 
 .nav-links {
@@ -16,6 +16,13 @@
 
 .nav-links a {
     color:blueviolet;
+    text-decoration: none;
+    background-color: #FFDAB9;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease;
 }
 
 .seccion-hero {
@@ -24,7 +31,7 @@
     justify-content: space-between;
     padding: 60px 10%;
     min-height: 80vh;
-    background-color: rgb(22, 211, 195);
+    background-color: #FFDAB9;
 }
 
 .contenido-hero {
@@ -43,4 +50,106 @@
 
 .btn-principal:hover {
     background-color: #e05a5a;
+}
+.btn-secundario {
+    background-color: rgb(223, 150, 198);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secundario:hover {
+    background-color: #e05a5a;
+}
+.btn-principal, .btn-secundario {
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+.btn-principal:hover, .btn-secundario:hover {
+    transform:scale(1.05);
+}
+.image-hero {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.image-hero img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0,1);
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #e05a5a;
+        padding: 20px;
+        text-align: center;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}
+
+#Contacto {
+    padding: 60px 20%;
+    text-align: center;
+    background-color: #FFDAB9;
+
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+
+}
+.formulario-contacto input, textarea
+{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+.seccion-features {
+    padding: 60px 10%;
+    text-align: center;
+    background-color: #ffdab9;
+}
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top:30px;
+    flex-wrap: wrap;
+}
+.tarjeta {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba (0,0,0,0,1);
+    text-align: center;
 }

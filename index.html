@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEVERM</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+    body
+    { font-family: 'Poppins', sans-serif;}
+        </style>
+    
 </head>
 <body>
     <header>
         <nav class="bar">
             <div class="logo">DEVARM</div>
-            <button class="menu-toggle"
-            id="menu-toggle">ee</button>
+            
             <ul class="nav-links" id="nav-links">
                 <li><a href="#Inicio">Inicio</a></li>
                 <li><a href="#Productos">Productos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
             </ul>
+            <button class="menu-toggle" id="menu-toggle">☰</button>
 
         </nav>
     </header>
@@ -27,15 +34,52 @@
                 <h1>DEVARM: Tu estilo, tu esencia.</h1>
                 <P>El toque natural que tu piel merece cada dia.</P>
                 <div class="contenedor-botones">
-                    <button class="btn-principal">Comprar ahora</button>
-                    <button class="btn-secundario">Ver catalogo</button>
+                    <a href="#Contacto" class="btn-principal">Comprar ahora</a>
+                    <a href="#Productos" class="btn-secundario">Ver catalogo</a>
                 </div>
-                <div class="image-hero"></div>
-                <div class="bloque-decorativo"></div>
+            </div>
+            <div class="image-hero">
+                <img src="imagen0.png" alt="Maquillaje">
             </div>
             
         </section>
+        <section id="Productos" class="seccion-features">
+            <h2>Nuestros Productos</h2>
+            <div class="contenedor-tarjetas">
+                <div class="tarjeta">
+                    <img src="imagen1.jpg" alt="Kit" style="width: 100%; border-radius: 8px;">
+                    <h3>Kit 1</h3>
+                    <p>Productos de alta calidad para un maquillaje natural</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="imagen2.png" alt="Labial" style="width: 100%; border-radius: 8px;">
+                    <h3>Kit Labiales</h3>
+                    <p>Labiales para tu dia a dia</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="imagen3.png" alt="Kit 2" style="width: 100%; border-radius: 8px;">
+                    <h3>Kit 2</h3>
+                    <p>Variedad de productos</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="Contacto">
+            <h2>Contactanos</h2>
+            <form class="formulario-contacto">
+                <input type="text" name="Email" required placeholder="Tu nombre" >
+                <input type="email" name="Email" required placeholder="usuario@ejemplo.com">
+                <textarea placeholder=" un mensaje ... " rows="4"></textarea>
+                <button type="submit" class="btn-principal">Enviar Mensaje</button>
+            </form>
+        </section>
     </main>
+    <footer>
+        <p>&copy; 2026 DEVARM - Tu estilo, tu esencia.</p>
+    </footer>
+
+    <script src="app.js"></script>
     
 </body>
 </html>
